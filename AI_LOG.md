@@ -7,18 +7,18 @@
 
 | Outil | Modèle (si connu) | Mode (autocomplétion, chat, agent) |
 |---|---|---|
-| | | |
+| AI | Copilot | Chat |
 
-Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <oui : chemin / non>
+Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <non>
 
 ## Entrées
 
-### AAAA-MM-JJ : <tâche en une ligne> (US-xx)
+### 2026-11-06 : Charger le backlog (US-01)
 
-- **Demande (résumé fidèle)** : <ce que vous avez demandé, avec le contexte fourni : fichiers, tests...>
-- **Résultat** : <accepté tel quel / modifié / rejeté>
-- **Ce que nous avons vérifié** : <tests lancés, lecture ligne à ligne, essai manuel...>
-- **Ce que nous avons changé ou rejeté, et pourquoi** :
+- **Demande (résumé fidèle)** : Génération d’un fichier en  qui permet à l’utilisateur de sélectionner le nombre de joueur dans la partie de poker 
+- **Résultat** : modifié
+- **Ce que nous avons vérifié** : Essai manuel (par nous et d’autres personnes) de la fonctionnalité de choix du nombre de joueurs.
+- **Ce que nous avons changé ou rejeté, et pourquoi** : Le contenu du fichier n’était pas en lien avec le contexte du projet, il a donc fallu modifier le code de certaines parties.
 
 ### AAAA-MM-JJ : ...
 
