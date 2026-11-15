@@ -7,7 +7,7 @@
 
 | Outil | Modèle (si connu) | Mode (autocomplétion, chat, agent) |
 |---|---|---|
-| AI | Copilot | Chat |
+| AI | Copilot | Chat | Claude |
 
 Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <non>
 
@@ -19,6 +19,15 @@ Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <no
 - **Résultat** : modifié
 - **Ce que nous avons vérifié** : Essai manuel (par nous et d’autres personnes) de la fonctionnalité de choix du nombre de joueurs.
 - **Ce que nous avons changé ou rejeté, et pourquoi** : Le contenu du fichier n’était pas en lien avec le contexte du projet, il a donc fallu modifier le code de certaines parties.
+
+
+### 2026-11-15 : Voter secrètement (US-04)
+
+- **Demande (résumé fidèle)** : Génération de scripts et modifications React qui permettent aux joueurs de voter chacun leur tour secrètement 
+- **Résultat** : accepté tel quel
+- **Ce que nous avons vérifié** : Essais manuels avec 2,3 puis 4 joueurs : chaque joueur peut voter secretement (le vote n'est pas affiché) avant de passer au joueur suivant
+- **Ce que nous avons changé ou rejeté, et pourquoi** :  rien modifié
+
 
 ### AAAA-MM-JJ : ...
 

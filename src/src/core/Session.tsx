@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Session() {
+function Session({ onValidate }: { onValidate: (players: string[]) => void }) {
   const [number, setNumber] = useState(0);
   const [players, setPlayers] = useState<string[]>([]);
 
@@ -41,9 +41,9 @@ function Session() {
         </div>
       ))}
 
-      <button onClick={() => console.log(players)}>
-        Valider les joueurs
-      </button>
+      <button onClick={() => onValidate(players)}>
+          Valider les joueurs
+        </button>
     </>
   )
 }
