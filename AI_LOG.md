@@ -28,6 +28,12 @@ Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <no
 - **Ce que nous avons vérifié** : Essais manuels avec 2,3 puis 4 joueurs : chaque joueur peut voter secretement (le vote n'est pas affiché) avant de passer au joueur suivant
 - **Ce que nous avons changé ou rejeté, et pourquoi** :  rien modifié
 
+### 2026-11-15 : Réveler les votes des joueurs (US-05)
+
+- **Demande (résumé fidèle)** : Modification du fichier Vote.tsx pour display/afficher les votes des joueurs à la fin des votes
+- **Ce que nous avons vérifié** : Essais manuels 
+- **Ce que nous avons changé ou rejeté, et pourquoi** :  Rien de modifié car les modifications correspondent aux demandes
+
 
 ### AAAA-MM-JJ : ...
 
