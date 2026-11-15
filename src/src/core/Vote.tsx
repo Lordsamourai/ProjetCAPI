@@ -5,7 +5,7 @@ const CARTES = ["0", "1/2", "1", "2", "3", "5", "8", "13", "20", "40", "100", "?
 function Vote({ players }: { players: string[] }) {
   const [current, setCurrent] = useState(0); // numéro du joueur qui vote
   const [votes, setVotes] = useState<string[]>([]); // votes déjà faits
-
+  const [revealed, setRevealed] = useState(false);
   const voter = (carte: string) => {
     setVotes([...votes, carte]);
     setCurrent(current + 1);
@@ -23,7 +23,21 @@ function Vote({ players }: { players: string[] }) {
     );
   }
 
-  return <h2>Tous les joueurs ont voté</h2>;
+  return (
+  <>
+    <h2>Tous les joueurs ont voté</h2>
+    {!revealed && (
+      <button onClick={() => setRevealed(true)}>Révéler les votes</button>
+    )}
+    {revealed && (
+      <ul>
+        {players.map((p, i) => (
+          <li key={i}>{p} : {votes[i]}</li>
+        ))}
+      </ul>
+    )}
+  </>
+);
 }
 
 export default Vote;
