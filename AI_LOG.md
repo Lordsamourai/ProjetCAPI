@@ -20,7 +20,6 @@ Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <no
 - **Ce que nous avons vérifié** : Essai manuel (par nous et d’autres personnes) de la fonctionnalité de choix du nombre de joueurs.
 - **Ce que nous avons changé ou rejeté, et pourquoi** : Le contenu du fichier n’était pas en lien avec le contexte du projet, il a donc fallu modifier le code de certaines parties.
 
-
 ### 2026-11-15 : Voter secrètement (US-04)
 
 - **Demande (résumé fidèle)** : Génération de scripts et modifications React qui permettent aux joueurs de voter chacun leur tour secrètement 
@@ -34,6 +33,12 @@ Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <no
 - **Ce que nous avons vérifié** : Essais manuels 
 - **Ce que nous avons changé ou rejeté, et pourquoi** :  Rien de modifié car les modifications correspondent aux demandes
 
+### 2026-11-21 : Créer un CI pour github (CI)
+
+- **Demande (résumé fidèle)** : Génération d’un fichier CI qui permet d'avoir un workflows sur github
+- **Résultat** : modifié
+- **Ce que nous avons vérifié** : Essai manuel du bon fonctionnement sur Actions dans github.
+- **Ce que nous avons changé ou rejeté, et pourquoi** : Modification du fichier pour qu'il fonctionne dans le context de Vite et React
 
 ### AAAA-MM-JJ : ...
 
