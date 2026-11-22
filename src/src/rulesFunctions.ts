@@ -51,30 +51,30 @@ export function median(votes: string[]): number {
     // Cas pair : moyenne des 2 du milieu
     const moyenne =
         (nombres[milieu - 1] + nombres[milieu]) / 2;
- const cartes = [0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100];
+    const cartes = [0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100];
 
-let meilleureCarte = cartes[0];
+    let meilleureCarte = cartes[0];
 
-for (let i = 1; i < cartes.length; i++) {
+    for (let i = 1; i < cartes.length; i++) {
 
-    const distanceActuelle =
-        Math.abs(cartes[i] - moyenne);
+        const distanceActuelle =
+            Math.abs(cartes[i] - moyenne);
 
-    const meilleureDistance =
-        Math.abs(meilleureCarte - moyenne);
+        const meilleureDistance =
+            Math.abs(meilleureCarte - moyenne);
 
-    if (distanceActuelle < meilleureDistance) {
-        meilleureCarte = cartes[i];
+        if (distanceActuelle < meilleureDistance) {
+            meilleureCarte = cartes[i];
+        }
+
+        // En cas d'égalité on prend la plus petite carte
+        else if (
+            meilleureCarte > cartes[i] &&
+            distanceActuelle === meilleureDistance
+        ) {
+            meilleureCarte = cartes[i];
+        }
     }
 
-    // En cas d'égalité on prend la plus petite carte
-    else if (
-        meilleureCarte > cartes[i] &&
-        distanceActuelle === meilleureDistance
-    ) {
-        meilleureCarte = cartes[i];
-    }
-}
-
-return meilleureCarte;
+    return meilleureCarte;
 }
