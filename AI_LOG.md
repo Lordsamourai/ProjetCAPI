@@ -40,6 +40,16 @@ Fichier d'instructions pour agent versionné (`CLAUDE.md`, `AGENTS.md`...) : <no
 - **Ce que nous avons vérifié** : Essai manuel du bon fonctionnement sur Actions dans github.
 - **Ce que nous avons changé ou rejeté, et pourquoi** : Modification du fichier pour qu'il fonctionne dans le context de Vite et React
 
+### 2026-11-21 : Règles du planning poker
+
+- **Demande (résumé fidèle)** : Créer des fonctions correspondants aux règles du planning poker à partir de nos pseudos code
+- **Résultat** : modifié
+- **Ce que nous avons vérifié** : Essai manuel du bon fonctionnement, tests avec le CI
+- **Ce que nous avons changé ou rejeté, et pourquoi** : Modifications du fichier généré :
+    * rejet de la fonction mediane car elle ne correspondait pas aux attentes de la regle (il fallait qu'enn cas de nombre de vote pair, la moyenne soit arrondi a la carte vote la plus proche, et non à l'entier superieur) 
+    *  nous avons changé l'architecture du fichier géneré pour le separer en 2 : rules.ts et rulesFunctions pour la propreté 
+
+
 ### AAAA-MM-JJ : ...
 
 ## Bilan (à compléter en séance 4, 3 lignes)
